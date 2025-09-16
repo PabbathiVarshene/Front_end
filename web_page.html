@@ -84,7 +84,7 @@
   <nav
     class="navbar navbar-expand-lg navbar-dark bg-dark rounded-4 shadow px-2 py-2"
   >
-    <a class="navbar-brand" href="index.html" data-key="navbar_brand">🌱 AgriAssist</a>
+    <a class="navbar-brand" href="web_page.html" data-key="navbar_brand">🌱 AgriAssist</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -565,6 +565,32 @@ as: {
           ? `🌾 Predicted Crop: ${result.predicted_crop}`
           : `❌ Error: ${result.error || "Invalid input"}`;
       });
+
+  // ✅ Store and apply selected language across pages
+  function applyLanguage(lang) {
+    // Save selected language in localStorage
+    localStorage.setItem("selectedLanguage", lang);
+
+    // Apply translations
+    translatePage(lang);
+
+    // Update dropdown selection
+    const langSelect = document.getElementById("language-select");
+    if (langSelect) langSelect.value = lang;
+  }
+
+  // When user selects a new language
+  document.getElementById("language-select").addEventListener("change", function () {
+    applyLanguage(this.value);
+  });
+
+  // On page load → apply saved language
+  window.addEventListener("load", function () {
+    const savedLang = localStorage.getItem("selectedLanguage") || "en";
+    applyLanguage(savedLang);
+  });
+
+
   </script>
 </body>
 </html>
