@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgriAssist - Instructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0; padding: 0; min-height: 100vh;
+      backdrop-filter: blur(3px);
+    }
+    .glass-card {
+      background: rgba(18, 18, 18, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 40px 0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+    .navbar {
+      background: rgba(18,18,18,0.97) !important;
+      border-radius: 15px;
+      margin-bottom: 36px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+    .navbar-brand { font-weight: bold; letter-spacing: 1px; font-size: 1.3rem; }
+    .nav-link { color: #fff !important; margin-right: 10px; border-radius: 10px; transition: background 0.2s; }
+    .nav-link.active, .nav-link:focus, .nav-link:hover { background: rgba(0,255,204,0.1); color: #0f9 !important; }
+  </style>
+</head>
+<body class="container py-4">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-4 shadow px-2 py-2">
+    <a class="navbar-brand" href="index.html">🌱 AgriAssist</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agriNavbar"
+      aria-controls="agriNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="agriNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="instructions.html">Instructions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="glass-card">
+    <h2 class="text-center mb-3">📝 Instructions</h2>
+    <ul>
+      <li>Navigate to Home for chat and crop prediction tools.</li>
+      <li>Use the chatbot to ask agriculture questions in your preferred language.</li>
+      <li>Fill the crop prediction form with accurate data for best results.</li>
+      <li>Switch between English, Telugu, and Hindi as needed for voice/text chatbot input.</li>
+      <li>Results show the most suitable crops for your inputs.</li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
